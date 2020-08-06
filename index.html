@@ -1,132 +1,87 @@
-body {
-    margin: 0;
-    font-family: "Helvetica", sans-serif;
-    color: seashell;
-    background-color: black;
-    font-size: 22px;
-    text-align: center;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet Challenge Project</title>
+    <link rel="stylesheet" href="Resources\CSS\style.css">
+</head>
+<body>
 
-  a {
-    color: seashell;
-    opacity:0.8;
-  }
+    <!--header-->
+    <header class="flex-container">
+        <img src="Resources\Images\cheat sheet logo.jpg" alt="">
+        <nav>
+            <span><a href="#mission">Mission</a></span>
+            <span><a href="#table">Table</a></span>
+            <span><a href="#myfam">My Family</a></span>
+            <span><a href="#contact">Contact Details</a></span>
+            </nav>
+    </header>
+
+    <div class="main">
+        <!--Mission statement-->
+        <div id="mission" class ="flex-container">
+            <div class="content">
+                <h2>JS/html cheatsheet</h2>
+                <h4>find some commonly used html and js, and understand what they may mean</h4>
+        </div>
+        </div>
+        <!--table section-->
+      <div id="table">
+          <h2>Table of cheats</h2>
+          <table class="cheats">
+              <thead>
+                  <tr>
+                      <th>term</th>
+                      <th>syntax</th>
+                      <th>translation</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <th>JS function</th>
+                      <th>const functionName = (arg1) =>{}</th>
+                      <th>make a function called function name, pass it an argument of some sort called arg1 </th>
+                  </tr>
+                  <tr><th>console printing</th><th>console.log("help");</th><th>this will print "help" to the console, also try checking if functions work at various stages of completion</th></tr>
+                  <tr><th>array.push()</th><th>arrayName.push(15);</th><th>this will put the value 15 in the last spot of array called arrayName. It adds as a value on the end</th></tr>
+                  <tr><th>need to figure out how to type html tags in html</th><th>can't write another cheat just yet</th><th>all the cheats are js as tags become invisible</th></tr>
+              </tbody>              
+          </table>
+      </div> 
+
+      <!--my family-->
+
+      <div id="myfam">
+          <h2>This is my beautiful fam</h2>
+          <div class="flex-container items">
+              <div class="item">
+                  <img src="Resources\Images\20190825_154421.jpg" alt=""><span>My beauties watching the sea</span></div>
+              <div class="item">
+                  <img src="Resources\Images\20200503_124752.jpg" alt=""><span>Sleeping beauties</span></div>
+              <div class="item">
+                  <img src="Resources\Images\20200704_161914.jpg" alt=""><span>Little monkey peeking through</span></div>
+              <div class="item">
+                  <img src="Resources\Images\20200728_111407.jpg" alt=""><span>Great British Bake Off Champ 2033</span></div>
+              <div class="item">
+                  <img src="Resources\Images\20200806_153949.jpg" alt=""><span>Cooling off with some ice cream</span></div>
+                  </div> 
+            </div>
+
+        <!--contacts--> 
+        
+        <div id="contact">
+            <h2>Contact</h2>
+         
+            <h5>Sundeepmanik83@gmail.com</h5>
+
+        </div>
+    </div>
   
-  h2,
-  h3,
-  h4 {
-    margin: 0;
-    padding: 10px;
-  }
-  .flex-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+</body>
 
-  /*header section*/
-
-  header{
-      background-color: black;
-      width: 100%;
-      height:150px;
-      position:fixed;
-      height: 100px;
-      z-index: 1;
-      align-items:center;
-      border-bottom: 1px solid seashell;
-  }
-  header img{
-      height: 100px;
-      width:120px;
-      margin-left: 20px;
-  }
-  header nav{
-      flex-grow:1;
-      text-align:right;
-     }
-
-/*main*/
-
-.main {
-    padding-top: 79px;
-    opacity: 0.9;
-    width: 1200px;
-    margin: auto;
-  }
-
-/*mission*/
-#mission{
-    margin-top: 70px;
-    border: 1px solid seashell;
-    width:95%;
-    height:600px;
-    
-    background-image: url("https://www.teachermagazine.com.au/files/ce-image/cache/1c03ffc10fd4ef6a/Computing-programming-and-coding-in-schools_855_513_60.jpg");
-}
-
-.content{
-    background-color: black;
-    margin:auto;
-    top:50%;
-    width:100%;
-}
-
-th{
-    border:1px solid black;
-}
- 
-.cheats{
-    background-color: seashell;
-    color:black;
-    border-collapse: collapse;
-    table-layout:auto;
-    width:100%;
-    }
-
-/*my family*/
-
-#myfam{
-    height: 1150px;
-    width: 100%;
-    margin: auto;
-    padding-top: 70px;    
-}
-
-.item{
-    padding:5px;
-}
-.item img{
-    display:block;
-    height:300px;
-    width:425px;
-}
-.item span{
-    display:block;
-    text-align: center;
-    padding:5px;
-}
-/* contact*/
-
-.flex-container.contacts{
-    padding-top:5px;
-    height:50px;
-    display:flex;
-    flex-direction: column;
-    margin:auto;
-   
-}
-#contact{
-    margin:auto;
-    width:30%;
-   border: 1px solid seashell;
-}
-
-/*footer*/
-
-footer{
-    padding-top:30px;
-    padding-left:20px;
-    text-align: left;
-}
-    
+<footer>
+    Copyright of Manik 2020
+</footer>
+</html>
